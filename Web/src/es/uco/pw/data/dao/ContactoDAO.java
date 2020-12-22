@@ -1,3 +1,7 @@
+/**
+ * @fileoverview 	Implementan las funciones que operan sobre la tabla contacto en la base de datos
+ * @author			Rafael Ayllón Gavilán <rafaaylloningeniero@gmail.com>
+ */
 package es.uco.pw.data.dao;
 
 import java.sql.PreparedStatement;

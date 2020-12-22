@@ -1,3 +1,8 @@
+/**
+ * @fileoverview 	Implementa funciones útiles para la conversión de cadenas de texto en otros formatos.
+ * @author			Rafael Ayllón Gavilán <rafaaylloningeniero@gmail.com>
+ */
+
 package es.uco.pw.business.util;
 
 import java.time.LocalDate;

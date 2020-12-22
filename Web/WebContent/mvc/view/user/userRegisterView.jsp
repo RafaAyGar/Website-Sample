@@ -9,7 +9,7 @@
 <head>
 	<meta charset="ISO-8859-1">
 	<title>Register</title>
-	<link rel="stylesheet" type="text/css" href="/P3/css/userLoginStyle.css">
+	<link rel="stylesheet" type="text/css" href="/P3/css/style.css">
 </head>
 
 <body>

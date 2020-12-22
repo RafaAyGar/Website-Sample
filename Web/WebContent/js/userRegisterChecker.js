@@ -1,3 +1,9 @@
+
+/**
+ * @fileoverview 	Revisa que los campos del register se hayan introducido correctamente
+ * @author			Rafael Ayllón Gavilán <rafaaylloningeniero@gmail.com>
+ */
+
 //Toma el formulario de la vista del register para añadir lógica a su onsubmit function
 const form = document.getElementById('form');
 

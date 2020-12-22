@@ -1,3 +1,8 @@
+/**
+ * @fileoverview 	Define la clase abstracta de la que heredan los diferentes DAO.
+ * @author			Rafael Ayllón Gavilán <rafaaylloningeniero@gmail.com>
+ */
+
 package es.uco.pw.data.dao;
 
 import java.io.InputStream;

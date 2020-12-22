@@ -1,3 +1,8 @@
+
+ /**
+ * @fileoverview 	Revisa que los campos del login se hayan introducido correctamente
+ * @author			Rafael Ayllón Gavilán <rafaaylloningeniero@gmail.com>
+ */
 const name = document.getElementById('email');
 const password = document.getElementById('password');
 const form = document.getElementById('form');

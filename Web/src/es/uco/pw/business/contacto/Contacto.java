@@ -1,3 +1,8 @@
+/**
+ * @fileoverview 	Implementa la clase contacto, que representa al usuario de la página web
+ * @author			Rafael Ayllón Gavilán <rafaaylloningeniero@gmail.com>
+ */
+
 package es.uco.pw.business.contacto;
 
 

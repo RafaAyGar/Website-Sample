@@ -1,3 +1,8 @@
+/**
+ * @fileoverview 	Define el bean donde se guardarán los datos del usuario en sesión.
+ * @author			Rafael Ayllón Gavilán <rafaaylloningeniero@gmail.com>
+ */
+
 package es.uco.pw.display.javabean;
 
 public class UserBean implements java.io.Serializable {
