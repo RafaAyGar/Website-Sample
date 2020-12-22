@@ -12,6 +12,12 @@ body {
 	margin: 0;
 }
 
+h1
+{
+	font-size: 1.5vw;
+	text-align: center;
+}
+
 .form
 {
 	padding: 30px;

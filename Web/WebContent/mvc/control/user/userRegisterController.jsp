@@ -41,7 +41,6 @@
 		//Dicho string será el que se pase al DAO.
 		String[] interestsArray = request.getParameterValues("interests");
 		String interestsSelected = Arrays.asList(interestsArray).toString();
-		System.out.println(interestsSelected);
 		
 		//Creamos el DAO.
 		DAO contactoDAO = new ContactoDAO(application.getInitParameter("dbID"), application.getInitParameter("dbUser"), application.getInitParameter("dbPass"), application.getInitParameter("sqlProp"));

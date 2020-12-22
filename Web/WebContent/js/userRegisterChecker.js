@@ -65,22 +65,6 @@ form.onsubmit = function()
 		setSuccessForInput(birthDate);
 	}
 	
-	//Email check
-	if(email.value == '')
-	{
-		setErrorForInput(email, '* El Email es obligatorio');
-		return false;
-	}
-	else if(!emailCheckRegex.test(email.value))
-	{
-		setErrorForInput(email, '* El Email introducido no es v\u00E1lido');
-		return false;
-	}
-	else
-	{
-		setSuccessForInput(email);
-	}
-	
 	//Contraseña check
 	if(pass.value == '')
 	{
@@ -102,6 +86,22 @@ form.onsubmit = function()
 	{
 		setErrorForCheckbox(baileCB, '* Tienes que seleccionar al menos un inter\u00E9s');
 		return false;
+	}
+	
+	//Email check
+	if(email.value == '')
+	{
+		setErrorForInput(email, '* El Email es obligatorio');
+		return false;
+	}
+	else if(!emailCheckRegex.test(email.value))
+	{
+		setErrorForInput(email, '* El Email introducido no es v\u00E1lido');
+		return false;
+	}
+	else
+	{
+		setSuccessForInput(email);
 	}
 
 	return true;

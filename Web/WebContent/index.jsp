@@ -33,13 +33,19 @@ if(userBean == null || userBean.getEmailUser().trim().equals(""))
 <%} 
 else
 {%>
-	<body> Bienvenido <jsp:getProperty property="emailUser" name="userBean"/></body>
-	<br/>
-	<br/>
-	<a href="/P3/mvc/control/user/disconnectController.jsp">Desconectar</a>
-	<br/>
-	<br/>
-	<a href="/P3/mvc/control/user/editProfileController.jsp">Editar Perfil</a>
+	<div class="form">
+	      <div class="form-box">
+	      
+	          <h1>Bienvenido <jsp:getProperty property="emailUser" name="userBean"/></h1>
+	
+	          <br><br>
+	
+	          <form action="/P3/mvc/control/user/editProfileController.jsp">
+	                <button type="submit">Editar Perfil</button>
+	          </form>
+	      
+	      </div>
+	</div>
 <%}
 %>
 </html>

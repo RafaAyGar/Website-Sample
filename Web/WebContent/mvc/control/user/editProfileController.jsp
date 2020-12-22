@@ -1,4 +1,5 @@
 
+<%@page import="java.util.Arrays"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@page errorPage="/P3/include/editProfileError.jsp" %>    
@@ -48,19 +49,20 @@
 			String newUserSurnames = request.getParameter("surNames");
 			String newBirthDate = request.getParameter("birthDate");
 			String newPass = request.getParameter("pass");
-			String newInterests = request.getParameter("interests");
-			
-			//Rellenamos una lista con los intereses indexados
-			List<Interes> newInterestsList = Converters.LeerInteresesDelInputIndexado(newInterests);
+
+			//Cogemos el valor de las checkboxes y lo transformamos en un string del tipo [interes1, interes2..., interesN].
+			//Dicho string será el que se pase al DAO.
+			String[] interestsArray = request.getParameterValues("interests");
+			String interestsSelected = Arrays.asList(interestsArray).toString();
 			
 			DAO contactoDAO = new ContactoDAO(application.getInitParameter("dbID"), application.getInitParameter("dbUser"), application.getInitParameter("dbPass"), application.getInitParameter("sqlProp"));
-			contactoDAO.Update(newUserName, newUserSurnames, newBirthDate, newPass, newInterestsList.toString(), userBean.getEmailUser());
+			contactoDAO.Update(newUserName, newUserSurnames, newBirthDate, newPass, interestsSelected, userBean.getEmailUser());
 			contactoDAO.CloseConnection();
 			%>
 				<jsp:setProperty property="name" value="<%=newUserName%>" name="userBean"/>
 				<jsp:setProperty property="surNames" value="<%=newUserSurnames%>" name="userBean"/>
 				<jsp:setProperty property="birthDate" value="<%=newBirthDate.toString()%>" name="userBean"/>
-				<jsp:setProperty property="interests" value="<%=newInterestsList.toString()%>" name="userBean"/>
+				<jsp:setProperty property="interests" value="<%=interestsSelected%>" name="userBean"/>
 				<jsp:setProperty property="password" value="<%=newPass%>" name="userBean"/>
 			<%
 			
