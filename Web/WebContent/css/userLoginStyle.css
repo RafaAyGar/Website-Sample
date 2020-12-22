@@ -1,0 +1,128 @@
+@charset "ISO-8859-1";
+
+/* Globals */
+
+body {
+	background-color: #393E41;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.form
+{
+	padding: 30px;
+    margin: auto;
+    width: 40%;
+}
+
+.outside-form-error
+{
+  	background-color: #D3D0CB;
+  	padding: 25px;
+  	width:100%;
+	border-radius: 15px;
+  	display: inline-block;
+  	vertical-align: middle;
+  	border: 3px solid red;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+  	align-items:center;
+  	box-sizing: border-box;
+}
+
+.form-box
+{
+  	background-color: #D3D0CB;
+  	padding: 10%;
+	border-radius: 15px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+    align-items:center;
+	width: 100%;
+  	display: inline-block;
+  	vertical-align: middle;
+  	box-sizing: border-box;
+}
+
+.form button
+{
+  	background-color: #E7BB41;
+	border-radius: 4px;
+  	border: 2px solid #E7BB41;
+	color: #000;
+	display: block;
+	font-size: 1.6vw;
+  	font-weight: bold;  
+	padding: 4%;
+    margin: auto;
+	width: 85%;
+  	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.form-control
+{
+  	padding: 2%;
+}
+
+.form-control label
+{
+	font-weight: bold;  
+	font-size: 1.5vw;
+	color:#000;
+	text-align:left;
+	display: inline-block;
+	margin-bottom: 5px;
+  	width:90px;
+}
+
+.form-control input
+{
+  	position:relative;
+  	display: inline-block;
+	margin-bottom: 1%;
+	width:100%;
+}
+
+.form-control.success input
+{
+	border-color: #44BBA4;
+}
+
+.form-control.error input
+{
+	border-color: #FF0021;
+}
+
+.checkbox-container
+{
+    display:inline-block;
+    width:25%;
+    padding:2%;
+}
+
+.checkbox-container label
+{
+	font-size: 1.1vw;
+    display:inline-block;
+    padding:5%;
+}
+
+.checkbox-container input[type=checkbox]
+{
+    display:inline-block;
+    -webkit-appearance: none;
+    border-radius:9px;
+    padding: 9%;
+    border: 3px solid black;
+    width: 5%;
+}
+
+.checkbox-container input[type=checkbox]:checked
+{
+    background: #E7BB41;
+}
+

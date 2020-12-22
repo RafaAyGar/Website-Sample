@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+
+<display-name>P3</display-name>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>CheckAge</servlet-name>
+  	<servlet-class>es.uco.pw.servlets.controller.CheckAge</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<servlet-class>es.uco.pw.servlets.controller.Login</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>CheckAge</servlet-name>
+  	<url-pattern>/CheckAge</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  		<param-name>sqlProp</param-name>
+  		<param-value>sql.properties</param-value>
+  	</context-param>
+  
+	<context-param>
+		<param-name>dbID</param-name>
+		<param-value>jdbc:mysql://oraclepr.uco.es:3306/i72aygar</param-value>
+	</context-param>
+  
+	<context-param>
+		<param-name>dbUser</param-name>
+		<param-value>i72aygar</param-value>
+	</context-param>
+	
+	<context-param>
+		<param-name>dbPass</param-name>
+		<param-value>29071998</param-value>
+	</context-param>
+  
+</web-app>
