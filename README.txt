@@ -17,5 +17,5 @@ Objetivos del proyecto:
 - El objetivo de este proyecto es crear un prototipo de página web con funcionalidad mínima, en la que se pueda registrar, iniciar sesión, y editar perfil, haciendo uso de buenas prácticas en los distintos lenguajes. La presentación gráfica deberá ser amigable y estilosa, haciendo uso de paletas de colores.
 
 Créditos:
-- Este proyecto ha sido desarrollado en su totalidad por Rafael Ayllón Gavilán, excepto el dibujado de los sprites utilizados, que fueron descargados de "https://www.spriters-resource.com/search/?q=naruto".
+- Este proyecto ha sido desarrollado en su totalidad por Rafael Ayllón Gavilán.
  
